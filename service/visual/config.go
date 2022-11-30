@@ -126,6 +126,14 @@ var (
 				"Version": []string{ServiceVersion20200826},
 			},
 		},
+		"OcrClueLicense": {
+			Method: http.MethodPost,
+			Path:   "/",
+			Query: url.Values{
+				"Action":  []string{"OcrClueLicense"},
+				"Version": []string{ServiceVersion20200826},
+			},
+		},
 		"OCRNormal": {
 			Method: http.MethodPost,
 			Path:   "/",

@@ -173,6 +173,15 @@ func (p *Visual) IDCard(form url.Values) (*model.IDCardResult, int, error) {
 	return resp, statusCode, nil
 }
 
+func (p *Visual) OcrClueLicense(form url.Values) (*model.OcrClueLicenseResult, int, error) {
+	resp := new(model.OcrClueLicenseResult)
+	statusCode, err := p.commonHandler("OcrClueLicense", form, resp)
+	if err != nil {
+		return nil, statusCode, err
+	}
+	return resp, statusCode, nil
+}
+
 func (p *Visual) OCRNormal(form url.Values) (*model.OCRNormalResult, int, error) {
 	resp := new(model.OCRNormalResult)
 	statusCode, err := p.commonHandler("OCRNormal", form, resp)
