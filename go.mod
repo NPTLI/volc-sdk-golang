@@ -1,4 +1,4 @@
-module github.com/volcengine/volc-sdk-golang
+module github.com/NPTLI/volc-sdk-golang
 
 go 1.14
 
