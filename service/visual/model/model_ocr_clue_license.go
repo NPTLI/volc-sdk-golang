@@ -33,8 +33,8 @@ type LicenseMain struct {
 }
 
 type LicensePos struct {
-	X int `json:"x"`
-	Y int `json:"y"`
+	X interface{} `json:"x"`
+	Y interface{} `json:"y"`
 }
 
 type OcrClueLicenseData struct {
