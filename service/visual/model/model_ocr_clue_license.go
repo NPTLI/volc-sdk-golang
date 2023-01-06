@@ -5,10 +5,10 @@ import (
 )
 
 type LicenseBasePos struct {
-	X      int `json:"x"`
-	Y      int `json:"y"`
-	Width  int `json:"width"`
-	Height int `json:"height"`
+	X      interface{} `json:"x"`
+	Y      interface{} `json:"y"`
+	Width  interface{} `json:"width"`
+	Height interface{} `json:"height"`
 }
 
 type LicenseBase struct {
